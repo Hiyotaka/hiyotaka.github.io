@@ -1,16 +1,17 @@
+- Outstanding Graduate Award (Shanghai Normal University), 2025.
 
-- Outstanding Graduate Award (CUMT), 2025.
+- Third-Prize Scholarship (Shanghai Normal University), 2024.
 
-- National Scholarship for Graduate Student, 2024.
+- Third-Prize Scholarship (Shanghai Normal University), 2023.
 
-- First-Prize Scholarship (CUMT), 2024.
+- Third-Prize Scholarship (Shanghai Normal University), 2022.
 
-- First-Prize Scholarship (CUMT), 2023.
+- Third Prize, Jiangsu Collegiate Mechanical Design Competition (Jiangsu Province), 2019
 
-- Freshman Scholarship (CUMT), 2022.
+- First-Prize Scholarship (NUAA Jincheng College), 2020.
 
-- Outstanding Graduation Project Award (Jiangsu Province), 2022.
+- Second-Prize Scholarship (NUAA Jincheng College), 2019.
 
-- First-Prize Enterprise Scholarship (CUMT), 2020.
+- Second-Prize Scholarship (NUAA Jincheng College), 2018.
 
-- First-Prize Scholarship (CUMT), 2019.
+- Second-Prize Scholarship (NUAA Jincheng College), 2017.

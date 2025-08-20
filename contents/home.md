@@ -1,17 +1,17 @@
+[![Hiyotaka](https://img.shields.io/badge/Hiyotaka-github-blue?logo=github)](https://github.com/Hiyotaka)
 
-
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
-
-He is currently a Fellow in the Department of Earth and Planetary Sciences (EPS) at Harvard University.
+He is currently an Algorithm Engineer at Qihoo 360 Technology Co., Ltd., where he engages in algorithm design and applied research in machine learning and artificial intelligence.
 
 #### Contact
+Email: zhaihaoyu007[at]gmail.com
 
-Email: senli[at]fas.harvard.edu
+#### Working Experience
+- Jul 2025 – Present, AI Algorithm Engineer, Qihoo 360 Technology Co., Ltd., Beijing, China  
+- Jun 2024 – Aug 2024, R&D Intern, GritWorld (Shanghai) Information Technology Co., Ltd., Shanghai, China  
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+M.E., Computer Science and Technology, Shanghai Normal University, Sep 2022 — Jun 2025.\
+B.E., Transportation, Nanjing University of Aeronautics and Astronautics, Jincheng College, Sep 2017 — Jun 2021.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
-
+Clustering, Artificial Intelligence, Deep Learning, Machine Learning, Data Mining, Computer Vision.
