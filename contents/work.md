@@ -1,0 +1,2 @@
+- Jul 2025 – Present, AI Algorithm Engineer, Qihoo 360 Technology Co., Ltd., Beijing, China  
+- Jun 2024 – Aug 2024, R&D Intern, GritWorld (Shanghai) Information Technology Co., Ltd., Shanghai, China  
