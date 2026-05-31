@@ -40,7 +40,7 @@ export function About() {
         <div>
           <h3 className="text-lg font-semibold text-slate-900 mb-3">Current Research Direction</h3>
           <p className="text-slate-700 leading-relaxed">
-            I am currently exploring runtime reliability monitoring for LLM agent tool chains, especially how cross-tool consistency and online novelty/OOD detection can identify unreliable agent behavior before final task failure.
+            I am currently exploring trajectory-level reliability monitoring for multi-step LLM tool use, especially how cross-tool consistency, evidence support, and online novelty/OOD detection can identify unreliable agent behavior before final task failure.
           </p>
         </div>
       </div>

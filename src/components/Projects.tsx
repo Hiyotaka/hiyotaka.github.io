@@ -21,14 +21,14 @@ export function Projects() {
       ]
     },
     {
-      title: "Reliable Tool-Chain Execution in LLM Agent Systems",
+      title: "Runtime Detection of Unreliable LLM Tool-Use Trajectories",
       period: "PhD Research Proposal",
       summary:
-        "A proposed research direction on detecting unreliable LLM-agent behavior during multi-step tool use rather than only evaluating final answers.",
+        "A proposed research direction on detecting unreliable tool-use trajectories during agent execution rather than only evaluating final answers.",
       points: [
-        "Models agent trajectories as structured execution traces across actions, observations, tools, and intermediate evidence.",
-        "Studies cross-tool consistency signals for identifying contradictions and unsupported conclusions.",
-        "Connects online novelty/OOD detection with runtime monitoring for safer agent deployment."
+        "Models agent trajectories as trace graphs over tasks, tool calls, observations, intermediate claims, and evidence dependencies.",
+        "Studies cross-tool contradiction, unsupported claims, argument propagation errors, abnormal tool sequences, and OOD trajectory patterns.",
+        "Develops runtime monitors that can detect, localize, and mitigate unreliable behavior before final answers or external actions."
       ]
     }
   ];
