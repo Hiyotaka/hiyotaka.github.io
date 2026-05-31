@@ -13,11 +13,11 @@ export function Projects() {
       title: "MAGA: LLM Agent for Malware and Security Analysis",
       period: "2025 - Present",
       summary:
-        "An LLM-based autonomous analysis system for security triage, combining tool orchestration, sandboxed execution, and structured evidence collection.",
+        "A multi-tool LLM agent platform for malware and security triage, combining tool orchestration, sandboxed execution, structured traces, and report generation.",
       points: [
-        "Designed a ReAct-style workflow for iterative planning, tool use, observation, and report generation.",
-        "Integrated Docker isolation, file triage, binary/PE inspection, Office/PDF analysis, and batch dispatch workflows.",
-        "Built FastAPI-based service interfaces and a web UI for repeatable security analysis experiments."
+        "Orchestrates Python, Node.js, shell execution, file operations, binary/PE inspection, and Office/PDF analysis inside per-task Docker sandboxes.",
+        "Implements batch multi-agent dispatch plus a FastAPI web UI for file upload, task submission, live status tracking, checklist progress, and Markdown report rendering.",
+        "Records structured action-observation traces for reliability analysis, cross-tool consistency checks, and runtime failure detection."
       ]
     },
     {

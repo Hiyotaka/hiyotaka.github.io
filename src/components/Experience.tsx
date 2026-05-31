@@ -13,9 +13,9 @@ export function Experience() {
                 <br />
                 360 Group, Beijing
                 <ul className="list-disc list-inside mt-2 space-y-1 text-slate-600">
-                  <li>Work on LLM-agent and retrieval-based pipelines for practical security and code analysis tasks.</li>
-                  <li>Develop tool-orchestration workflows that emphasize traceability, reproducibility, and reliable intermediate evidence.</li>
-                  <li>Build and evaluate applied AI systems across agent execution, service integration, and analysis automation.</li>
+                  <li>Build multi-tool LLM agent workflows for malware/security triage across sandboxed execution, file analysis, and report generation.</li>
+                  <li>Develop batch dispatch, FastAPI service interfaces, and structured action-observation traces for repeatable agent experiments.</li>
+                  <li>Evaluate runtime reliability through traceability, cross-tool consistency, and failure-detection signals.</li>
                 </ul>
               </div>
               <span className="text-sm text-slate-500 whitespace-nowrap">Jul 2025 – Present</span>
@@ -41,12 +41,12 @@ export function Experience() {
               Title: Research on Holstein Cattle Image Recognition Based on Spectral Graph Theory and Elastic Net Sparse Representation
             </p>
             <p className="mb-3 leading-relaxed">
-              Participated as a core member, focusing on algorithmic aspects of clustering analysis, anomaly detection, and pattern recognition applied to large-scale image data.
+              Participated as a core contributor, focusing on graph-based clustering, outlier detection, and pattern recognition for image and tabular data.
             </p>
             <ul className="list-disc list-inside space-y-1 ml-1 text-slate-600">
-              <li>Designed and optimized graph-based clustering and density-based methods.</li>
-              <li>Extended the scope from cattle image recognition to general data mining, novelty detection, and pattern recognition tasks.</li>
-              <li>Led extensions that resulted in multiple publications in international journals and conferences.</li>
+              <li>Designed symmetry-distance outlier scoring and a minimum-spanning-forest split/merge clustering framework.</li>
+              <li>Evaluated SMMSF on 12 two-dimensional and 15 real-world datasets against 9 comparison algorithms using AC, PR, RE, and F1.</li>
+              <li>Evaluated the outlier detector on 4 synthetic and 16 UCI datasets against 5 mainstream detectors, then verified clustering gains after denoising.</li>
             </ul>
           </div>
         </div>

@@ -12,6 +12,10 @@ export function About() {
                 <span className="font-medium text-slate-900">Master of Engineering, Computer Science and Technology</span>
                 <br />
                 Shanghai Normal University
+                <br />
+                Supervisor: <a href="https://mayanshnu.github.io/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Prof. Yan Ma</a>
+                <br />
+                Thesis: Research on a Split-Merge Clustering Algorithm Based on Minimum Spanning Forests
               </div>
               <span className="text-sm text-slate-500 whitespace-nowrap">Sep 2022 — Jun 2025</span>
             </li>
@@ -29,7 +33,7 @@ export function About() {
         <div>
           <h3 className="text-lg font-semibold text-slate-900 mb-3">Research Interests</h3>
           <p className="text-slate-700 leading-relaxed">
-            Trustworthy Machine Learning, LLM Agent Security, Reliable AI Systems, Out-of-Distribution and Novelty Detection, Clustering, Anomaly Detection, and Data Mining.
+            Trustworthy Machine Learning, LLM Agent Security and Reliability, Out-of-Distribution / Novelty Detection, Clustering, Anomaly Detection, and Data Mining.
           </p>
         </div>
 

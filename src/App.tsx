@@ -132,6 +132,7 @@ export default function App() {
           <div className="flex space-x-4">
             <a href="mailto:zhaihaoyu007@gmail.com" className="hover:text-slate-900 transition-colors">Email</a>
             <a href="https://github.com/Hiyotaka" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=fB7o1RoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">Scholar</a>
           </div>
         </div>
       </footer>

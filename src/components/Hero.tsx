@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { FileText, Github, Mail, MapPin, Building2 } from 'lucide-react';
+import { FileText, Github, GraduationCap, Mail, MapPin, Building2 } from 'lucide-react';
 import profilePhoto from '../assets/photo.png';
 
 export function Hero() {
@@ -53,6 +53,10 @@ export function Hero() {
                   <Github className="w-4 h-4" />
                   <span>GitHub</span>
                 </a>
+                <a href="https://scholar.google.com/citations?user=fB7o1RoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-slate-900 transition-colors">
+                  <GraduationCap className="w-4 h-4" />
+                  <span>Scholar</span>
+                </a>
                 <a href="./Haoyu_Zhai_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-slate-900 transition-colors">
                   <FileText className="w-4 h-4" />
                   <span>CV</span>
@@ -69,7 +73,7 @@ export function Hero() {
           className="mt-10 text-slate-700 leading-relaxed"
         >
           <p className="mb-4">
-            I am an AI Algorithm Engineer at 360 Group in Beijing. My work and research focus on reliable AI systems, with recent emphasis on LLM agent security, tool-chain reliability, out-of-distribution detection, clustering, and anomaly detection.
+            I am an AI Algorithm Engineer at 360 Group in Beijing. My work and research focus on trustworthy machine learning and reliable AI systems, with recent emphasis on LLM agent security, tool-chain reliability, out-of-distribution detection, clustering, and anomaly detection.
           </p>
           <p>
             I am seeking fully funded PhD opportunities for Fall 2026 / Spring 2027 in Trustworthy Machine Learning, LLM Agent Security, and Reliable AI Systems.

@@ -24,9 +24,10 @@ export function Publications() {
       authors: ["Haoyu Zhai", "Jie. Yang*", "Haotao Guo", "Bin Wang", "Yan Ma*"],
       venue: "Neurocomputing",
       year: "2026",
+      note: "[First author | JCR Q1]",
       links: [
         { label: "[Paper]", url: "https://doi.org/10.1016/j.neucom.2026.132957" },
-        { label: "[Code]", url: "https://github.com/Hiyotaka/SMMSF-algorithm" }
+        { label: "[code]", url: "https://github.com/Hiyotaka/SMMSF-algorithm" }
       ]
     },
     {
@@ -34,10 +35,10 @@ export function Publications() {
       authors: ["Zexuan Fei†", "Haoyu Zhai†", "Jie Yang*", "Bin Wang", "Yan Ma*"],
       venue: "Knowledge-based Systems",
       year: "2025",
-      note: "(† Co-first authors)",
+      note: "[Co-first author | JCR Q1]",
       links: [
         { label: "[Paper]", url: "https://doi.org/10.1016/j.knosys.2025.113250" },
-        { label: "[Code]", url: "https://github.com/Hiyotaka/Bombing-clustering-algorithm" }
+        { label: "[code]", url: "https://github.com/Hiyotaka/Bombing-clustering-algorithm" }
       ]
     },
     {
@@ -45,9 +46,10 @@ export function Publications() {
       authors: ["Haoyu Zhai", "Zexuan Fei", "Yan Ma*"],
       venue: "International Conference on Pattern Recognition",
       year: "2024",
+      note: "[First author]",
       links: [
         { label: "[Paper]", url: "https://doi.org/10.1007/978-3-031-78192-6_22" },
-        { label: "[Code]", url: "https://github.com/Hiyotaka/SDR_Outlier" }
+        { label: "[code]", url: "https://github.com/Hiyotaka/SDR_Outlier" }
       ]
     }
   ];

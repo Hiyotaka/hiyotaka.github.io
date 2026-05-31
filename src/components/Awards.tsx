@@ -2,7 +2,7 @@ import { Section } from './Section';
 
 export function Awards() {
   const awards = [
-    { title: "Outstanding Graduate Award", organization: "Shanghai Normal University", year: "2025" },
+    { title: "Outstanding Graduate Award (top 5%)", organization: "Shanghai Normal University", year: "2025" },
     { title: "Third-Prize Scholarship", organization: "Shanghai Normal University", year: "2024, 2023, 2022" },
     { title: "Third Prize, Jiangsu Collegiate Mechanical Design Competition", organization: "Jiangsu Province", year: "2019" },
     { title: "First-Prize Scholarship", organization: "NUAA Jincheng College", year: "2020" },
