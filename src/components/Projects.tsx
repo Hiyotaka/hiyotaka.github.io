@@ -10,7 +10,7 @@ type ProjectItem = {
 export function Projects() {
   const projects: ProjectItem[] = [
     {
-      title: "MAGA: LLM Agent for Malware and Security Analysis",
+      title: "Multi-Tool LLM Agent for Malware and Security Analysis",
       period: "2025 - Present",
       summary:
         "A multi-tool LLM agent platform for malware and security triage, combining tool orchestration, sandboxed execution, structured traces, and report generation.",
@@ -21,13 +21,13 @@ export function Projects() {
       ]
     },
     {
-      title: "Runtime Detection of Unreliable LLM Tool-Use Trajectories",
+      title: "Runtime Reliability Monitoring for Multi-Tool LLM Agents",
       period: "PhD Research Proposal",
       summary:
-        "A proposed research direction on detecting unreliable tool-use trajectories during agent execution rather than only evaluating final answers.",
+        "A proposed research direction on detecting unreliable tool-use trajectories during agent execution through evidence consistency and online OOD monitoring.",
       points: [
         "Models agent trajectories as trace graphs over tasks, tool calls, observations, intermediate claims, and evidence dependencies.",
-        "Studies cross-tool contradiction, unsupported claims, argument propagation errors, abnormal tool sequences, and OOD trajectory patterns.",
+        "Focuses on cross-tool contradiction, unsupported claims, argument propagation errors, and OOD partial trajectories.",
         "Develops runtime monitors that can detect, localize, and mitigate unreliable behavior before final answers or external actions."
       ]
     }
