@@ -12,6 +12,11 @@ export function Experience() {
                 <span className="font-medium text-slate-900">AI Algorithm Engineer</span>
                 <br />
                 Qihoo 360 Technology Co., Ltd., Beijing, China
+                <ul className="list-disc list-inside mt-2 space-y-1 text-slate-600">
+                  <li>Work on LLM-agent and retrieval-based pipelines for practical security and code analysis tasks.</li>
+                  <li>Develop tool-orchestration workflows that emphasize traceability, reproducibility, and reliable intermediate evidence.</li>
+                  <li>Build and evaluate applied AI systems across agent execution, service integration, and analysis automation.</li>
+                </ul>
               </div>
               <span className="text-sm text-slate-500 whitespace-nowrap">Jul 2025 – Present</span>
             </li>
@@ -36,11 +41,11 @@ export function Experience() {
               Title: Research on Holstein Cattle Image Recognition Based on Spectral Graph Theory and Elastic Net Sparse Representation
             </p>
             <p className="mb-3 leading-relaxed">
-              Participated as a core member, focusing on algorithmic aspects of clustering analysis and anomaly detection applied to large-scale image data.
+              Participated as a core member, focusing on algorithmic aspects of clustering analysis, anomaly detection, and pattern recognition applied to large-scale image data.
             </p>
             <ul className="list-disc list-inside space-y-1 ml-1 text-slate-600">
               <li>Designed and optimized graph-based clustering and density-based methods.</li>
-              <li>Extended the scope from cattle image recognition to general data mining and pattern recognition tasks.</li>
+              <li>Extended the scope from cattle image recognition to general data mining, novelty detection, and pattern recognition tasks.</li>
               <li>Led extensions that resulted in multiple publications in international journals and conferences.</li>
             </ul>
           </div>

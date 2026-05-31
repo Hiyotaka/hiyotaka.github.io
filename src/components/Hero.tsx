@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Github, Mail, MapPin, Building2 } from 'lucide-react';
+import { FileText, Github, Mail, MapPin, Building2 } from 'lucide-react';
 import profilePhoto from '../assets/photo.png';
 
 export function Hero() {
@@ -32,7 +32,7 @@ export function Hero() {
               Haoyu Zhai <span className="text-slate-500 font-normal text-2xl ml-2">翟浩宇</span>
             </h1>
             <p className="text-lg text-slate-700 mb-4">
-              AI Algorithm Engineer
+              Trustworthy ML & LLM Agent Security
             </p>
             
             <div className="flex flex-col gap-2 text-sm text-slate-600">
@@ -53,6 +53,10 @@ export function Hero() {
                   <Github className="w-4 h-4" />
                   <span>GitHub</span>
                 </a>
+                <a href="./Haoyu_Zhai_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-slate-900 transition-colors">
+                  <FileText className="w-4 h-4" />
+                  <span>CV</span>
+                </a>
               </div>
             </div>
           </motion.div>
@@ -64,8 +68,11 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-10 text-slate-700 leading-relaxed"
         >
+          <p className="mb-4">
+            I am an AI Algorithm Engineer at Qihoo 360 Technology Co., Ltd. My work and research focus on reliable AI systems, with recent emphasis on LLM agent security, tool-chain reliability, out-of-distribution detection, clustering, and anomaly detection.
+          </p>
           <p>
-            I am currently an Algorithm Engineer at Qihoo 360 Technology Co., Ltd., where I engage in algorithm design and applied research in machine learning and artificial intelligence.
+            I am seeking fully funded PhD opportunities for Fall 2026 / Spring 2027 in Trustworthy Machine Learning, LLM Agent Security, and Reliable AI Systems.
           </p>
         </motion.div>
       </div>

@@ -29,7 +29,14 @@ export function About() {
         <div>
           <h3 className="text-lg font-semibold text-slate-900 mb-3">Research Interests</h3>
           <p className="text-slate-700 leading-relaxed">
-            Clustering, Artificial Intelligence, Deep Learning, Machine Learning, Data Mining, Computer Vision.
+            Trustworthy Machine Learning, LLM Agent Security, Reliable AI Systems, Out-of-Distribution and Novelty Detection, Clustering, Anomaly Detection, and Data Mining.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold text-slate-900 mb-3">Current Research Direction</h3>
+          <p className="text-slate-700 leading-relaxed">
+            I am currently exploring runtime reliability monitoring for LLM agent tool chains, especially how cross-tool consistency and online novelty/OOD detection can identify unreliable agent behavior before final task failure.
           </p>
         </div>
       </div>

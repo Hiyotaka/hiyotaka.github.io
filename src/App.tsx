@@ -1,6 +1,7 @@
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Publications } from './components/Publications';
+import { Projects } from './components/Projects';
 import { Experience } from './components/Experience';
 import { Awards } from './components/Awards';
 import { useState, useEffect } from 'react';
@@ -12,7 +13,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'publications', 'experience', 'awards'];
+      const sections = ['home', 'about', 'publications', 'projects', 'experience', 'awards'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -35,6 +36,7 @@ export default function App() {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'publications', label: 'Publications' },
+    { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
     { id: 'awards', label: 'Awards' },
   ];
@@ -118,6 +120,7 @@ export default function App() {
         <Hero />
         <About />
         <Publications />
+        <Projects />
         <Experience />
         <Awards />
       </main>
