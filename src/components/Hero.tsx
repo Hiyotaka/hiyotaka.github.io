@@ -38,7 +38,7 @@ export function Hero() {
             <div className="flex flex-col gap-2 text-sm text-slate-600">
               <div className="flex items-center gap-2">
                 <Building2 className="w-4 h-4" />
-                <span>Leading Cybersecurity Company</span>
+                <span>360 Group, Beijing</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -69,7 +69,7 @@ export function Hero() {
           className="mt-10 text-slate-700 leading-relaxed"
         >
           <p className="mb-4">
-            I am an AI Algorithm Engineer at a leading cybersecurity company in China. My work and research focus on reliable AI systems, with recent emphasis on LLM agent security, tool-chain reliability, out-of-distribution detection, clustering, and anomaly detection.
+            I am an AI Algorithm Engineer at 360 Group in Beijing. My work and research focus on reliable AI systems, with recent emphasis on LLM agent security, tool-chain reliability, out-of-distribution detection, clustering, and anomaly detection.
           </p>
           <p>
             I am seeking fully funded PhD opportunities for Fall 2026 / Spring 2027 in Trustworthy Machine Learning, LLM Agent Security, and Reliable AI Systems.

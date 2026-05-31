@@ -11,7 +11,7 @@ export function Experience() {
               <div>
                 <span className="font-medium text-slate-900">AI Algorithm Engineer</span>
                 <br />
-                Leading Cybersecurity Company, Beijing, China
+                360 Group, Beijing
                 <ul className="list-disc list-inside mt-2 space-y-1 text-slate-600">
                   <li>Work on LLM-agent and retrieval-based pipelines for practical security and code analysis tasks.</li>
                   <li>Develop tool-orchestration workflows that emphasize traceability, reproducibility, and reliable intermediate evidence.</li>
