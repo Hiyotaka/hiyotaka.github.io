@@ -128,7 +128,7 @@ export default function App() {
       {/* Footer */}
       <footer className="border-t border-slate-100 py-8 mt-16 text-center text-sm text-slate-500">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Haoyu Zhai. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Haoyu Zhai (翟浩宇). All Rights Reserved.</p>
           <div className="flex space-x-4">
             <a href="mailto:zhaihaoyu007@gmail.com" className="hover:text-slate-900 transition-colors">Email</a>
             <a href="https://github.com/Hiyotaka" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">GitHub</a>

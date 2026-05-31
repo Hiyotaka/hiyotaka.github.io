@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <h1 className="text-3xl font-bold text-slate-900 mb-2">
-              Haoyu Zhai <span className="text-slate-500 font-normal text-2xl ml-2">翟浩宇</span>
+              Haoyu Zhai <span className="text-slate-500 font-normal text-2xl ml-2">(翟浩宇)</span>
             </h1>
             <p className="text-lg text-slate-700 mb-4">
               Trustworthy ML & LLM Agent Security
