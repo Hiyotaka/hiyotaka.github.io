@@ -4,7 +4,8 @@ import { Publications } from './components/Publications';
 import { Projects } from './components/Projects';
 import { Experience } from './components/Experience';
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { FileText, Github, GraduationCap, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
+import profilePhoto from './assets/photo.png';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -51,29 +52,46 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-slate-200 selection:text-slate-900">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-slate-100 z-40">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14">
-            <a 
-              href="#home" 
-              onClick={(e) => { e.preventDefault(); scrollTo('home'); }}
-              className="text-lg font-semibold tracking-tight text-slate-900 hover:text-slate-600 transition-colors"
-            >
-              H. Zhai
-            </a>
-            
-            {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-6">
+    <div className="min-h-screen bg-white font-sans text-slate-900">
+      <aside className="hidden md:fixed md:inset-y-0 md:left-0 md:block md:w-72 md:overflow-y-auto md:border-r md:border-slate-200 md:bg-white md:p-6">
+        <img
+          src={profilePhoto}
+          alt="Haoyu Zhai"
+          className="mx-auto mb-4 w-40 border border-slate-200"
+        />
+        <h1 className="text-center text-2xl font-semibold">Haoyu Zhai</h1>
+        <p className="text-center text-xl text-slate-700">翟浩宇</p>
+        <hr className="my-5" />
+        <p className="my-1">AI Algorithm Engineer</p>
+        <p className="my-1">360 Group, Beijing</p>
+        <p className="my-1">M.Eng., Shanghai Normal University</p>
+        <hr className="my-5" />
+        <div className="space-y-3 text-sm">
+          <p className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4" /> Beijing, China</p>
+          <p className="flex gap-2"><Mail className="mt-0.5 h-4 w-4" /> <a className="text-[#006F68] hover:underline" href="mailto:zhaihaoyu007@gmail.com">zhaihaoyu007@gmail.com</a></p>
+          <p className="flex gap-2"><Phone className="mt-0.5 h-4 w-4" /> +86 130 0252 3469</p>
+          <p className="flex gap-2"><Github className="mt-0.5 h-4 w-4" /> <a className="text-[#006F68] hover:underline" href="https://github.com/Hiyotaka" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          <p className="flex gap-2"><GraduationCap className="mt-0.5 h-4 w-4" /> <a className="text-[#006F68] hover:underline" href="https://scholar.google.com/citations?user=fB7o1RoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
+          <p className="flex gap-2"><FileText className="mt-0.5 h-4 w-4" /> <a className="text-[#006F68] hover:underline" href="./Haoyu_Zhai_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></p>
+        </div>
+      </aside>
+
+      <div className="md:ml-72">
+        <nav className="sticky top-0 z-40 border-b border-slate-200 bg-white">
+          <div className="flex min-h-16 items-center justify-between px-4 md:px-8">
+            <div className="md:hidden">
+              <p className="text-lg font-semibold">Haoyu Zhai</p>
+              <p className="text-sm text-slate-600">翟浩宇</p>
+            </div>
+            <div className="hidden md:flex md:items-center md:gap-1">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollTo(item.id)}
-                  className={`text-sm font-medium transition-colors ${
+                  className={`rounded px-3 py-2 text-sm transition-colors ${
                     activeSection === item.id
-                      ? 'text-slate-900'
-                      : 'text-slate-500 hover:text-slate-900'
+                      ? 'bg-[#006F68] text-white'
+                      : 'text-slate-800 hover:bg-[#006F68] hover:text-white'
                   }`}
                 >
                   {item.label}
@@ -81,58 +99,48 @@ export default function App() {
               ))}
             </div>
 
-            {/* Mobile Menu Toggle */}
             <button 
-              className="md:hidden p-2 -mr-2 text-slate-600 hover:text-slate-900 transition-colors"
+              className="md:hidden p-2 text-slate-700"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
-        </div>
 
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-b border-slate-100">
-            <div className="px-4 py-2 space-y-1">
+          {isMobileMenuOpen && (
+            <div className="border-t border-slate-200 px-4 py-2 md:hidden">
               {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollTo(item.id)}
-                  className={`block w-full text-left px-4 py-2 text-sm font-medium ${
-                    activeSection === item.id
-                      ? 'text-slate-900 bg-slate-50'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
+                  <button
+                    key={item.id}
+                    onClick={() => scrollTo(item.id)}
+                    className={`block w-full rounded px-3 py-2 text-left text-sm ${
+                      activeSection === item.id
+                        ? 'bg-[#006F68] text-white'
+                        : 'text-slate-800 hover:bg-[#006F68] hover:text-white'
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
             </div>
-          </div>
-        )}
-      </nav>
+          )}
+        </nav>
 
-      {/* Main Content */}
-      <main>
-        <Hero />
-        <About />
-        <Publications />
-        <Projects />
-        <Experience />
-      </main>
+        <main className="px-4 py-4 md:px-8">
+          <Hero />
+          <About />
+          <Publications />
+          <Projects />
+          <Experience />
+        </main>
 
-      {/* Footer */}
-      <footer className="border-t border-slate-100 py-8 mt-16 text-center text-sm text-slate-500">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Haoyu Zhai (翟浩宇). All Rights Reserved.</p>
-          <div className="flex space-x-4">
-            <a href="mailto:zhaihaoyu007@gmail.com" className="hover:text-slate-900 transition-colors">Email</a>
-            <a href="https://github.com/Hiyotaka" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">GitHub</a>
-            <a href="https://scholar.google.com/citations?user=fB7o1RoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">Scholar</a>
+        <footer className="border-t border-slate-200 px-4 py-4 text-sm text-slate-600 md:px-8">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p>Last updated: June 2026.</p>
+            <p>&copy; {new Date().getFullYear()} Haoyu Zhai (翟浩宇)</p>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   );
 }

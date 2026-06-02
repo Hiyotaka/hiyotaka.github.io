@@ -58,7 +58,7 @@ export function Publications() {
     const isMe = author.includes("Haoyu Zhai");
     return (
       <span key={idx}>
-        <span className={isMe ? "font-semibold text-slate-900" : "text-slate-700"}>
+        <span className={isMe ? "font-semibold text-slate-950" : "text-slate-700"}>
           {author}
         </span>
         {idx < arr.length - 1 ? ", " : ""}
@@ -68,38 +68,36 @@ export function Publications() {
 
   return (
     <Section id="publications" title="Publications">
-      <div className="space-y-8">
+      <div>
         <div>
-          <h3 className="text-lg font-semibold text-slate-900 mb-4">Published</h3>
-          <ul className="space-y-6">
+          <h3 className="mb-2 text-xl font-semibold text-[#006F68]">Journal Articles / Conference Papers</h3>
+          <ul className="ml-5 list-disc space-y-3">
             {published.map((pub, idx) => (
-              <li key={idx} className="text-slate-700 leading-relaxed">
+              <li key={idx} className="leading-relaxed">
                 {pub.authors.map((author, i) => renderAuthor(author, i, pub.authors))}.{" "}
-                <span className="font-medium text-slate-900">{pub.title}</span>.{" "}
+                <span className="font-semibold">{pub.title}</span>.{" "}
                 <span className="italic">{pub.venue}</span>, {pub.year}.{" "}
-                {pub.note && <span className="text-slate-500">{pub.note}</span>}{" "}
-                <span className="inline-flex gap-2 ml-1">
-                  {pub.links.map((link, i) => (
-                    <a
-                      key={i}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-indigo-600 hover:underline"
-                    >
-                      {link.label}
-                    </a>
-                  ))}
-                </span>
+                {pub.note && <span className="text-slate-600">{pub.note}</span>}{" "}
+                {pub.links.map((link, i) => (
+                  <a
+                    key={i}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-1 text-[#006F68] hover:underline"
+                  >
+                    {link.label}
+                  </a>
+                ))}
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-sm text-slate-500">* Corresponding author &nbsp;&middot;&nbsp; &dagger; Equal contribution</p>
+          <p className="mt-3 text-sm text-slate-600">* Corresponding author &nbsp;&middot;&nbsp; &dagger; Equal contribution</p>
         </div>
 
         {submitted.length > 0 && (
           <div>
-            <h3 className="text-lg font-semibold text-slate-900 mb-4">Submitted / Under Review</h3>
+            <h3 className="mb-2 text-xl font-semibold text-[#006F68]">Submitted / Under Review</h3>
             <ul className="space-y-6">
               {submitted.map((pub, idx) => (
                 <li key={idx} className="text-slate-700 leading-relaxed">
@@ -108,13 +106,13 @@ export function Publications() {
                   {pub.status && <span className="text-slate-500">[{pub.status}]</span>}{" "}
                   <span className="inline-flex gap-2 ml-1">
                     {pub.links.map((link, i) => (
-                      <a
-                        key={i}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-indigo-600 hover:underline"
-                      >
+                    <a
+                      key={i}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-teal-700 hover:underline"
+                    >
                         {link.label}
                       </a>
                     ))}

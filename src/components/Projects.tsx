@@ -46,15 +46,15 @@ export function Projects() {
 
   return (
     <Section id="projects" title="Projects & Research Direction">
-      <div className="space-y-8">
+      <div className="space-y-6">
         {projects.map((project) => (
-          <article key={project.title} className="text-slate-700 leading-relaxed">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 mb-2">
-              <h3 className="text-lg font-semibold text-slate-900">{project.title}</h3>
-              <span className="text-sm text-slate-500 whitespace-nowrap">{project.period}</span>
+          <article key={project.title}>
+            <div className="flex flex-col justify-between gap-1 sm:flex-row">
+              <h3 className="text-xl font-semibold text-[#006F68]">{project.title}</h3>
+              <span className="text-slate-600">{project.period}</span>
             </div>
-            <p className="mb-3">{project.summary}</p>
-            <ul className="list-disc list-inside space-y-1 text-slate-600">
+            <p className="mt-1 leading-relaxed">{project.summary}</p>
+            <ul className="ml-5 mt-2 list-disc space-y-1">
               {project.points.map((point) => (
                 <li key={point}>{point}</li>
               ))}

@@ -1,84 +1,27 @@
-import { motion } from 'motion/react';
-import { FileText, Github, GraduationCap, Mail, MapPin, Building2 } from 'lucide-react';
-import profilePhoto from '../assets/photo.png';
-
 export function Hero() {
   return (
-    <section id="home" className="pt-32 pb-12 sm:pb-16">
-      <div className="max-w-3xl mx-auto px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="flex-shrink-0"
-          >
-            <img 
-              src={profilePhoto}
-              alt="Haoyu Zhai" 
-              className="w-32 h-32 rounded-full object-cover border border-slate-200"
-              onError={(e) => {
-                e.currentTarget.src = "https://picsum.photos/seed/avatar/400/400";
-              }}
-            />
-          </motion.div>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <h1 className="text-3xl font-bold text-slate-900 mb-2">
-              Haoyu Zhai <span className="text-slate-500 font-normal text-2xl ml-2">(翟浩宇)</span>
-            </h1>
-            <p className="text-lg text-slate-700 mb-4">
-              Trustworthy ML, RAG Security & OOD Evidence Detection
-            </p>
-            
-            <div className="flex flex-col gap-2 text-sm text-slate-600">
-              <div className="flex items-center gap-2">
-                <Building2 className="w-4 h-4" />
-                <span>360 Group, Beijing</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                <span>Beijing, China</span>
-              </div>
-              <div className="flex items-center gap-4 mt-2">
-                <a href="mailto:zhaihaoyu007@gmail.com" className="flex items-center gap-1.5 hover:text-slate-900 transition-colors">
-                  <Mail className="w-4 h-4" />
-                  <span>Email</span>
-                </a>
-                <a href="https://github.com/Hiyotaka" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-slate-900 transition-colors">
-                  <Github className="w-4 h-4" />
-                  <span>GitHub</span>
-                </a>
-                <a href="https://scholar.google.com/citations?user=fB7o1RoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-slate-900 transition-colors">
-                  <GraduationCap className="w-4 h-4" />
-                  <span>Scholar</span>
-                </a>
-                <a href="./Haoyu_Zhai_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-slate-900 transition-colors">
-                  <FileText className="w-4 h-4" />
-                  <span>CV</span>
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-10 text-slate-700 leading-relaxed"
-        >
-          <p className="mb-4">
-            I am an AI Algorithm Engineer at 360 Group in Beijing. My work and research focus on trustworthy machine learning and reliable AI systems, with recent emphasis on security of retrieval-augmented and multi-tool LLM systems, evidence-quality monitoring, out-of-distribution detection, clustering, and anomaly detection.
-          </p>
-          <p>
-            I am seeking fully funded PhD opportunities for January 2027 or September 2027 in Trustworthy Machine Learning, RAG Security, and Reliable AI Systems.
-          </p>
-        </motion.div>
+    <section id="home" className="m-3 scroll-mt-24">
+      <div className="border-b border-slate-300">
+        <h2 className="py-1 text-2xl font-semibold text-[#006F68]">Biography</h2>
+      </div>
+      <div className="p-2 leading-relaxed">
+        <p>
+          Haoyu Zhai is an AI Algorithm Engineer at 360 Group in Beijing. His work
+          focuses on trustworthy machine learning, security of retrieval-augmented
+          and multi-tool LLM systems, out-of-distribution / novelty detection,
+          clustering, and anomaly detection.
+        </p>
+        <p className="mt-3">
+          He received the M.Eng. degree in Computer Science and Technology from
+          Shanghai Normal University under the supervision of Prof. Yan Ma. His
+          master&apos;s research studied clustering and outlier detection, leading to
+          publications in Neurocomputing, Knowledge-Based Systems, and ICPR.
+        </p>
+        <p className="mt-3">
+          He is seeking fully funded PhD opportunities for January 2027 or
+          September 2027 in trustworthy machine learning, RAG security, and
+          reliable AI systems.
+        </p>
       </div>
     </section>
   );
