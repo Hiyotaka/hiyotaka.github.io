@@ -14,7 +14,7 @@ export function Experience() {
                 360 Group, Beijing
                 <ul className="list-disc list-inside mt-2 space-y-1 text-slate-600">
                   <li>Built an embedding-based code/malware similarity retrieval pipeline with preprocessing, chunking, embedding generation, Milvus indexing, ANN search, and file-level aggregation.</li>
-                  <li>Validated retrieval over about 17.6K files / 3.5M chunk embeddings; the upgraded model and index design later scaled to about 40M chunk embeddings.</li>
+                  <li>Validated retrieval over about 17.6K files / 3.5M chunk embeddings; the validated route was later scaled to about 40M chunk embeddings by the APT research team.</li>
                   <li>Build multi-tool LLM agent workflows for malware/security triage across sandboxed execution, binary/PE inspection, Office/PDF analysis, and report generation.</li>
                   <li>Diagnose reliability failures in the agent pipeline and improve end-to-end behavior through model selection and prompt design.</li>
                 </ul>

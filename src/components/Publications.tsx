@@ -21,7 +21,7 @@ export function Publications() {
   const published: PublicationItem[] = [
     {
       title: "Density-increment and cut-edge optimized clustering via minimum spanning forest",
-      authors: ["Haoyu Zhai", "Jie. Yang*", "Haotao Guo", "Bin Wang", "Yan Ma*"],
+      authors: ["Haoyu Zhai", "Jie Yang*", "Haotao Guo", "Bin Wang", "Yan Ma*"],
       venue: "Neurocomputing",
       year: "2026",
       note: "[First author | JCR Q1]",
@@ -94,6 +94,7 @@ export function Publications() {
               </li>
             ))}
           </ul>
+          <p className="mt-4 text-sm text-slate-500">* Corresponding author &nbsp;&middot;&nbsp; &dagger; Equal contribution</p>
         </div>
 
         {submitted.length > 0 && (

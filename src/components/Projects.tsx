@@ -11,7 +11,7 @@ export function Projects() {
   const projects: ProjectItem[] = [
     {
       title: "Embedding-Based Code / Malware Similarity Retrieval",
-      period: "2025 - Present",
+      period: "2025.07 - 2025.11",
       summary:
         "A Milvus-based retrieval pipeline for matching malware samples and reused code fragments through code chunk embeddings and file-level aggregation.",
       points: [
@@ -22,13 +22,13 @@ export function Projects() {
     },
     {
       title: "Multi-Tool LLM Agent for Malware and Security Analysis",
-      period: "2025 - Present",
+      period: "2025.11 - Present",
       summary:
         "A multi-tool LLM agent platform for malware and security triage, combining tool orchestration, sandboxed execution, structured traces, and report generation.",
       points: [
         "Orchestrates Python, Node.js, shell execution, file operations, binary/PE inspection, and Office/PDF analysis inside per-task Docker sandboxes.",
         "Implements batch multi-agent dispatch plus a FastAPI web UI for file upload, task submission, live status tracking, checklist progress, and Markdown report rendering.",
-        "Records structured action-observation traces for reliability analysis, cross-tool consistency checks, and runtime failure detection."
+        "Records structured action-observation traces, diagnoses recurring reliability failures, and improves end-to-end behavior through model selection and prompt design."
       ]
     },
     {
