@@ -30,22 +30,11 @@ export function Projects() {
         "Implements batch multi-agent dispatch plus a FastAPI web UI for file upload, task submission, live status tracking, checklist progress, and Markdown report rendering.",
         "Records structured action-observation traces, diagnoses recurring reliability failures, and improves end-to-end behavior through model selection and prompt design."
       ]
-    },
-    {
-      title: "Poisoned and OOD Evidence Detection for RAG and Multi-Tool LLM Systems",
-      period: "PhD Research Proposal",
-      summary:
-        "A proposed research direction on detecting poisoned or out-of-distribution evidence before it corrupts final answers or external actions.",
-      points: [
-        "Models RAG and agent runs as evidence graphs over queries, retrieved passages, tool calls, observations, intermediate claims, and support/contradiction dependencies.",
-        "Focuses on cross-source contradiction, unsupported claims, anomalous retrieval distributions, abnormal tool sequences, and OOD partial traces.",
-        "Develops runtime monitors that can re-retrieve, down-weight sources, request verifying tools, or escalate before decisions are corrupted."
-      ]
     }
   ];
 
   return (
-    <Section id="projects" title="Projects & Research Direction">
+    <Section id="projects" title="Projects">
       <div className="space-y-6">
         {projects.map((project) => (
           <article key={project.title}>
