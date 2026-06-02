@@ -32,7 +32,7 @@ export function Hero() {
               Haoyu Zhai <span className="text-slate-500 font-normal text-2xl ml-2">(翟浩宇)</span>
             </h1>
             <p className="text-lg text-slate-700 mb-4">
-              Trustworthy ML & LLM Agent Security
+              Trustworthy ML, RAG Security & OOD Evidence Detection
             </p>
             
             <div className="flex flex-col gap-2 text-sm text-slate-600">
@@ -73,10 +73,10 @@ export function Hero() {
           className="mt-10 text-slate-700 leading-relaxed"
         >
           <p className="mb-4">
-            I am an AI Algorithm Engineer at 360 Group in Beijing. My work and research focus on trustworthy machine learning and reliable AI systems, with recent emphasis on LLM agent security, trajectory-level evidence monitoring, out-of-distribution detection, clustering, and anomaly detection.
+            I am an AI Algorithm Engineer at 360 Group in Beijing. My work and research focus on trustworthy machine learning and reliable AI systems, with recent emphasis on security of retrieval-augmented and multi-tool LLM systems, evidence-quality monitoring, out-of-distribution detection, clustering, and anomaly detection.
           </p>
           <p>
-            I am seeking fully funded PhD opportunities for Fall 2026 / Spring 2027 in Trustworthy Machine Learning, LLM Agent Security, and Reliable AI Systems.
+            I am seeking fully funded PhD opportunities for January 2027 or September 2027 in Trustworthy Machine Learning, RAG Security, and Reliable AI Systems.
           </p>
         </motion.div>
       </div>

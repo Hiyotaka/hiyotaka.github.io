@@ -16,6 +16,8 @@ export function About() {
                 Supervisor: <a href="https://mayanshnu.github.io/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Prof. Yan Ma</a>
                 <br />
                 Thesis: Research on a Split-Merge Clustering Algorithm Based on Minimum Spanning Forests
+                <br />
+                Award: Outstanding Graduate Award, Shanghai Normal University, 2025 (top 5%)
               </div>
               <span className="text-sm text-slate-500 whitespace-nowrap">Sep 2022 — Jun 2025</span>
             </li>
@@ -33,14 +35,14 @@ export function About() {
         <div>
           <h3 className="text-lg font-semibold text-slate-900 mb-3">Research Interests</h3>
           <p className="text-slate-700 leading-relaxed">
-            Trustworthy Machine Learning, LLM Agent Security and Reliability, Out-of-Distribution / Novelty Detection, Clustering, Anomaly Detection, and Data Mining.
+            Trustworthy Machine Learning, Security of Retrieval-Augmented and Multi-Tool LLM Systems, Out-of-Distribution / Novelty Detection, Clustering, Anomaly Detection, and Data Mining.
           </p>
         </div>
 
         <div>
           <h3 className="text-lg font-semibold text-slate-900 mb-3">Current Research Direction</h3>
           <p className="text-slate-700 leading-relaxed">
-            I am currently exploring trajectory-level reliability monitoring for multi-step LLM tool use, especially how cross-tool consistency, evidence support, and online novelty/OOD detection can identify unreliable agent behavior before final task failure.
+            I am currently exploring poisoned and out-of-distribution evidence detection in RAG and multi-tool LLM systems, especially how cross-source consistency, evidence support, and online novelty/OOD detection can identify unreliable evidence before final decisions are corrupted.
           </p>
         </div>
       </div>

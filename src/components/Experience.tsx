@@ -13,9 +13,10 @@ export function Experience() {
                 <br />
                 360 Group, Beijing
                 <ul className="list-disc list-inside mt-2 space-y-1 text-slate-600">
-                  <li>Build multi-tool LLM agent workflows for malware/security triage across sandboxed execution, file analysis, and report generation.</li>
-                  <li>Develop batch dispatch, FastAPI service interfaces, and structured action-observation traces for repeatable agent experiments.</li>
-                  <li>Evaluate runtime reliability through traceability, cross-tool consistency, and failure-detection signals.</li>
+                  <li>Built an embedding-based code/malware similarity retrieval pipeline with preprocessing, chunking, embedding generation, Milvus indexing, ANN search, and file-level aggregation.</li>
+                  <li>Validated retrieval over about 17.6K files / 3.5M chunk embeddings; the upgraded model and index design later scaled to about 40M chunk embeddings.</li>
+                  <li>Build multi-tool LLM agent workflows for malware/security triage across sandboxed execution, binary/PE inspection, Office/PDF analysis, and report generation.</li>
+                  <li>Diagnose reliability failures in the agent pipeline and improve end-to-end behavior through model selection and prompt design.</li>
                 </ul>
               </div>
               <span className="text-sm text-slate-500 whitespace-nowrap">Jul 2025 – Present</span>

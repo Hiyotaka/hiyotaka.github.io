@@ -3,7 +3,6 @@ import { About } from './components/About';
 import { Publications } from './components/Publications';
 import { Projects } from './components/Projects';
 import { Experience } from './components/Experience';
-import { Awards } from './components/Awards';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -13,7 +12,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'publications', 'projects', 'experience', 'awards'];
+      const sections = ['home', 'about', 'publications', 'projects', 'experience'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -38,7 +37,6 @@ export default function App() {
     { id: 'publications', label: 'Publications' },
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
-    { id: 'awards', label: 'Awards' },
   ];
 
   const scrollTo = (id: string) => {
@@ -122,7 +120,6 @@ export default function App() {
         <Publications />
         <Projects />
         <Experience />
-        <Awards />
       </main>
 
       {/* Footer */}

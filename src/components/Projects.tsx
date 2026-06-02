@@ -10,6 +10,17 @@ type ProjectItem = {
 export function Projects() {
   const projects: ProjectItem[] = [
     {
+      title: "Embedding-Based Code / Malware Similarity Retrieval",
+      period: "2025 - Present",
+      summary:
+        "A Milvus-based retrieval pipeline for matching malware samples and reused code fragments through code chunk embeddings and file-level aggregation.",
+      points: [
+        "Preprocesses code files into chunks, generates embeddings with GraphCodeBERT and Qwen3-Embedding-0.6B, and indexes vectors with HNSW plus cosine similarity.",
+        "Aggregates chunk-level hits into file-level evidence using Reciprocal Rank Fusion for deduplication, same-origin sample association, and partial reused-snippet detection.",
+        "Validated the route on about 17.6K files / 3.5M chunk embeddings before later scale-up by the APT research team."
+      ]
+    },
+    {
       title: "Multi-Tool LLM Agent for Malware and Security Analysis",
       period: "2025 - Present",
       summary:
@@ -21,14 +32,14 @@ export function Projects() {
       ]
     },
     {
-      title: "Runtime Reliability Monitoring for Multi-Tool LLM Agents",
+      title: "Poisoned and OOD Evidence Detection for RAG and Multi-Tool LLM Systems",
       period: "PhD Research Proposal",
       summary:
-        "A proposed research direction on detecting unreliable tool-use trajectories during agent execution through evidence consistency and online OOD monitoring.",
+        "A proposed research direction on detecting poisoned or out-of-distribution evidence before it corrupts final answers or external actions.",
       points: [
-        "Models agent trajectories as trace graphs over tasks, tool calls, observations, intermediate claims, and evidence dependencies.",
-        "Focuses on cross-tool contradiction, unsupported claims, argument propagation errors, and OOD partial trajectories.",
-        "Develops runtime monitors that can detect, localize, and mitigate unreliable behavior before final answers or external actions."
+        "Models RAG and agent runs as evidence graphs over queries, retrieved passages, tool calls, observations, intermediate claims, and support/contradiction dependencies.",
+        "Focuses on cross-source contradiction, unsupported claims, anomalous retrieval distributions, abnormal tool sequences, and OOD partial traces.",
+        "Develops runtime monitors that can re-retrieve, down-weight sources, request verifying tools, or escalate before decisions are corrupted."
       ]
     }
   ];
